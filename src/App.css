@@ -1,38 +1,139 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  background-color: #1b2021;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  width: 95%;
+  height: 60px;
+  background-color: #5a37d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff8ff;
+  border-radius: 6px;
+  padding: 0px 15px;
+  margin-top: 5px;
+  
+}
+
+.navLogo {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.results {
+  font-size: 1.1rem;
+}
+
+.navLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navLogo h1 {
+  color: #fff8ff;
+  margin-left: -5px;
+  font-size: 1.9rem;
+}
+
+.inputSection {
+  width: 250px;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.inputSection input {
+  background-color: #6e45f1;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px 80px 7px 10px;
+  color: #fff8ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::placeholder {
+  color: #cdc9cd;
 }
+
+.moviesDetails {
+  background-color: #24292c;
+  width: 30%;
+  height: 97%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.movie {
+  width: 93%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 5px;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #fff8ff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.movie:hover {
+  background-color: #293234;
+}
+
+.movieImage {
+  width: 35px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.movieImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.movieName {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movieName h5 {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.movieName p {
+  font-size: 0.8rem;
+  margin-top: -15px;
+}
+
+.moviesSection {
+  background-color: #24292c;
+  width: 30%;
+  height: 95%;
+  border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
